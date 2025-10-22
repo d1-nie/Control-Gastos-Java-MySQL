@@ -1,0 +1,19 @@
+CREATE DATABASE db_gastos;
+
+USE db_gastos;
+CREATE TABLE ingresos (
+  id_ingreso INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion VARCHAR(150) NOT NULL,
+  monto DECIMAL(10,2) NOT NULL,
+  fecha DATE NOT NULL
+);
+CREATE TABLE gastos (
+  id_gasto INT AUTO_INCREMENT PRIMARY KEY,
+  descripcion VARCHAR(150) NOT NULL,
+  monto DECIMAL(10,2) NOT NULL,
+  fecha DATE NOT NULL
+);
+SHOW TABLES;
+
+SHOW DATABASES;
+
